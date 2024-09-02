@@ -1,17 +1,30 @@
 section.navLink {
+  margin: 10rem 15rem;
+  margin-bottom: 2rem;
   .title {
     font-size: 3.2rem;
     color: $bg-yellow;
-
-    margin: 10rem 15rem;
-    margin-bottom: 2rem;
     padding-bottom: 2rem;
-
     box-shadow: rgba(33, 35, 38, 0.2) 0px 10px 10px -10px;
 
     i {
       font-size: 4rem;
       margin-right: 1.5rem;
     }
+  }
+
+  .link_btn_box {
+    display: flex;
+    padding: 2rem 0rem;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 1000px) {
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+  }
+  @media screen and (max-width: 600px) {
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 }

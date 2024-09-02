@@ -269,56 +269,60 @@ div.bookmark_green table th {
 [data-theme] .link_btn span {
   display: inline-block;
   font-size: 1.6rem;
+  color: #4e4e4e;
 }
 [data-theme] .link_btn:hover {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  color: #fff;
   cursor: pointer;
 }
+[data-theme] .link_btn:hover i,
+[data-theme] .link_btn:hover span {
+  color: #fff;
+}
 
-[data-theme=main] .link_btn {
+[data-theme=main] .link_btn i {
   color: #0c8f4f;
 }
 [data-theme=main] .link_btn:hover {
   background-color: #0c8f4f;
 }
 
-[data-theme=blue] .link_btn {
+[data-theme=blue] .link_btn i {
   color: #0a7eda;
 }
 [data-theme=blue] .link_btn:hover {
   background-color: #0a7eda;
 }
 
-[data-theme=purple] .link_btn {
+[data-theme=purple] .link_btn i {
   color: #9f41bd;
 }
 [data-theme=purple] .link_btn:hover {
   background-color: #9f41bd;
 }
 
-[data-theme=red] .link_btn {
+[data-theme=red] .link_btn i {
   color: #ff6360;
 }
 [data-theme=red] .link_btn:hover {
   background-color: #ff6360;
 }
 
-[data-theme=green] .link_btn {
+[data-theme=green] .link_btn i {
   color: #26b0a4;
 }
 [data-theme=green] .link_btn:hover {
   background-color: #26b0a4;
 }
 
-[data-theme=orange] .link_btn {
+[data-theme=orange] .link_btn i {
   color: #ff5a00;
 }
 [data-theme=orange] .link_btn:hover {
   background-color: #ff5a00;
 }
 
-[data-theme=blue-2] .link_btn {
+[data-theme=blue-2] .link_btn i {
   color: #2d41ac;
 }
 [data-theme=blue-2] .link_btn:hover {
@@ -485,15 +489,34 @@ div.bookmark_green table th {
   transform: translateY(250%);
 }
 
+section.navLink {
+  margin: 10rem 15rem;
+  margin-bottom: 2rem;
+}
 section.navLink .title {
   font-size: 3.2rem;
   color: #ffb848;
-  margin: 10rem 15rem;
-  margin-bottom: 2rem;
   padding-bottom: 2rem;
   box-shadow: rgba(33, 35, 38, 0.2) 0px 10px 10px -10px;
 }
 section.navLink .title i {
   font-size: 4rem;
   margin-right: 1.5rem;
+}
+section.navLink .link_btn_box {
+  display: flex;
+  padding: 2rem 0rem;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 1000px) {
+  section.navLink {
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  section.navLink {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */

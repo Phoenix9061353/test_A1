@@ -121,12 +121,17 @@
   span {
     display: inline-block;
     font-size: 1.6rem;
+    color: #4e4e4e;
   }
 
   &:hover {
     box-shadow: $box-shadow-2;
-    color: $bg-white;
     cursor: pointer;
+
+    i,
+    span {
+      color: $bg-white;
+    }
   }
 }
 
