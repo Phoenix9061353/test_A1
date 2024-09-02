@@ -15,9 +15,13 @@ section.progress {
       background-color: #d4d4d4;
       width: 3rem;
       height: 3rem;
-      padding-top: 2px;
-      text-align: center;
       border-radius: 100px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      padding-bottom: 2px;
     }
 
     .bar {
@@ -34,6 +38,23 @@ section.progress {
       }
       .bar {
         background-color: $theme-color-main;
+      }
+    }
+
+    @media screen and (max-width: 1200px) {
+      .bar {
+        width: 10rem;
+      }
+    }
+    @media screen and (max-width: 1000px) {
+      .bar {
+        width: 5rem;
+      }
+    }
+    @media screen and (max-width: 800px) {
+      .number {
+        width: 2rem;
+        height: 2rem;
       }
     }
   }

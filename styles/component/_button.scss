@@ -74,7 +74,10 @@
   padding: 0.5rem 1rem;
   transition: all 0.3s;
   text-align: center;
-  max-width: max-content;
+  width: max-content;
+  white-space: inherit;
+  display: flex;
+  gap: 5px;
 
   &_main {
     @include btnBackground($theme-color-main);

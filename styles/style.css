@@ -169,11 +169,23 @@ div.bookmark_green table th {
 .lt_btn_green:hover {
   background-color: rgba(12, 143, 79, 0.8);
 }
+.lt_btn_green span::-moz-selection {
+  background-color: inherit;
+}
+.lt_btn_green span::selection {
+  background-color: inherit;
+}
 .lt_btn_blue {
   background-color: #0a7eda;
 }
 .lt_btn_blue:hover {
   background-color: rgba(10, 126, 218, 0.8);
+}
+.lt_btn_blue span::-moz-selection {
+  background-color: inherit;
+}
+.lt_btn_blue span::selection {
+  background-color: inherit;
 }
 .lt_btn_red {
   background-color: #ff6360;
@@ -181,11 +193,23 @@ div.bookmark_green table th {
 .lt_btn_red:hover {
   background-color: rgba(255, 99, 96, 0.8);
 }
+.lt_btn_red span::-moz-selection {
+  background-color: inherit;
+}
+.lt_btn_red span::selection {
+  background-color: inherit;
+}
 .lt_btn_yellow {
   background-color: #ffb848;
 }
 .lt_btn_yellow:hover {
   background-color: rgba(255, 184, 72, 0.8);
+}
+.lt_btn_yellow span::-moz-selection {
+  background-color: inherit;
+}
+.lt_btn_yellow span::selection {
+  background-color: inherit;
 }
 .lt_btn i {
   color: #fff;
@@ -206,8 +230,11 @@ div.bookmark_green table th {
   padding: 0.5rem 1rem;
   transition: all 0.3s;
   text-align: center;
-  max-width: -moz-max-content;
-  max-width: max-content;
+  width: -moz-max-content;
+  width: max-content;
+  white-space: inherit;
+  display: flex;
+  gap: 5px;
 }
 .md_btn_main {
   background-color: #0c8f4f;
@@ -215,11 +242,23 @@ div.bookmark_green table th {
 .md_btn_main:hover {
   background-color: rgba(12, 143, 79, 0.8);
 }
+.md_btn_main span::-moz-selection {
+  background-color: inherit;
+}
+.md_btn_main span::selection {
+  background-color: inherit;
+}
 .md_btn_blue {
   background-color: #0a7eda;
 }
 .md_btn_blue:hover {
   background-color: rgba(10, 126, 218, 0.8);
+}
+.md_btn_blue span::-moz-selection {
+  background-color: inherit;
+}
+.md_btn_blue span::selection {
+  background-color: inherit;
 }
 .md_btn_purple {
   background-color: #9f41bd;
@@ -227,11 +266,23 @@ div.bookmark_green table th {
 .md_btn_purple:hover {
   background-color: rgba(159, 65, 189, 0.8);
 }
+.md_btn_purple span::-moz-selection {
+  background-color: inherit;
+}
+.md_btn_purple span::selection {
+  background-color: inherit;
+}
 .md_btn_red {
   background-color: #ff6360;
 }
 .md_btn_red:hover {
   background-color: rgba(255, 99, 96, 0.8);
+}
+.md_btn_red span::-moz-selection {
+  background-color: inherit;
+}
+.md_btn_red span::selection {
+  background-color: inherit;
 }
 .md_btn_green {
   background-color: #26b0a4;
@@ -239,17 +290,35 @@ div.bookmark_green table th {
 .md_btn_green:hover {
   background-color: rgba(38, 176, 164, 0.8);
 }
+.md_btn_green span::-moz-selection {
+  background-color: inherit;
+}
+.md_btn_green span::selection {
+  background-color: inherit;
+}
 .md_btn_orange {
   background-color: #ff5a00;
 }
 .md_btn_orange:hover {
   background-color: rgba(255, 90, 0, 0.8);
 }
+.md_btn_orange span::-moz-selection {
+  background-color: inherit;
+}
+.md_btn_orange span::selection {
+  background-color: inherit;
+}
 .md_btn_blue-2 {
   background-color: #2d41ac;
 }
 .md_btn_blue-2:hover {
   background-color: rgba(45, 65, 172, 0.8);
+}
+.md_btn_blue-2 span::-moz-selection {
+  background-color: inherit;
+}
+.md_btn_blue-2 span::selection {
+  background-color: inherit;
 }
 .md_btn:hover {
   cursor: pointer;
@@ -544,9 +613,11 @@ section.progress .step .number {
   background-color: #d4d4d4;
   width: 3rem;
   height: 3rem;
-  padding-top: 2px;
-  text-align: center;
   border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2px;
 }
 section.progress .step .bar {
   width: 15rem;
@@ -562,4 +633,20 @@ section.progress .step_active .number {
 }
 section.progress .step_active .bar {
   background-color: #0c8f4f;
+}
+@media screen and (max-width: 1200px) {
+  section.progress .step .bar {
+    width: 10rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  section.progress .step .bar {
+    width: 5rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  section.progress .step .number {
+    width: 2rem;
+    height: 2rem;
+  }
 }/*# sourceMappingURL=style.css.map */
