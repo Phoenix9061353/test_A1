@@ -1,0 +1,78 @@
+@mixin themeColor($theme-color) {
+  .link_btn {
+    color: $theme-color;
+    &:hover {
+      background-color: $theme-color;
+    }
+  }
+}
+
+@mixin btnBackground($color) {
+  background-color: $color;
+  &:hover {
+    background-color: rgba($color, 0.8);
+  }
+}
+
+@mixin bookmarkColor($color) {
+  border-left: 10px solid $color;
+  color: $color;
+
+  table {
+    th {
+      background-color: rgba($color, 0.1);
+      color: $color;
+    }
+  }
+}
+
+@mixin btnTitle($title) {
+  &:hover {
+    &::before,
+    &::after {
+      visibility: visible;
+      opacity: 1;
+      cursor: default;
+    }
+
+    &::before {
+      transform: translateY(150%);
+    }
+    &::after {
+      transform: translateY(300%);
+    }
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    display: block;
+    text-align: center;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.3s;
+  }
+
+  &::before {
+    content: $title;
+    padding: 0.15rem 0.5rem 0.3rem 0.5rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    min-width: max-content;
+    background-color: black;
+
+    transform: translateY(140%);
+  }
+  &::after {
+    content: '';
+    width: 0rem;
+    height: 0rem;
+    border-left: 0.75rem solid transparent;
+    border-right: 0.75rem solid transparent;
+    border-bottom: 0.75rem solid black;
+
+    transform: translateY(250%);
+  }
+}

@@ -1,0 +1,17 @@
+section.navLink {
+  .title {
+    font-size: 3.2rem;
+    color: $bg-yellow;
+
+    margin: 10rem 15rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+
+    box-shadow: rgba(33, 35, 38, 0.2) 0px 10px 10px -10px;
+
+    i {
+      font-size: 4rem;
+      margin-right: 1.5rem;
+    }
+  }
+}
