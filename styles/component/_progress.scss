@@ -1,0 +1,40 @@
+section.progress {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 5rem;
+
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #4d4d4d;
+
+    .number {
+      color: #fff;
+      background-color: #d4d4d4;
+      width: 3rem;
+      height: 3rem;
+      padding-top: 2px;
+      text-align: center;
+      border-radius: 100px;
+    }
+
+    .bar {
+      width: 15rem;
+      height: 2px;
+      background-color: #d4d4d4;
+      transform: translateX(5px);
+    }
+
+    &_active {
+      color: $theme-color-main;
+      .number {
+        background-color: $theme-color-main;
+      }
+      .bar {
+        background-color: $theme-color-main;
+      }
+    }
+  }
+}

@@ -8,11 +8,14 @@
   gap: 1rem;
   margin-bottom: 2rem;
 
-  &_normal {
-    width: 17rem;
+  &_mini {
+    width: 7.5rem;
   }
   &_small {
     width: 12.5rem;
+  }
+  &_normal {
+    width: 17rem;
   }
   &_large {
     width: 25rem;
@@ -70,6 +73,8 @@
   color: #fff;
   padding: 0.5rem 1rem;
   transition: all 0.3s;
+  text-align: center;
+  max-width: max-content;
 
   &_main {
     @include btnBackground($theme-color-main);

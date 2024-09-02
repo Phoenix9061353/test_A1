@@ -136,11 +136,14 @@ div.bookmark_green table th {
   gap: 1rem;
   margin-bottom: 2rem;
 }
-.btn_box_normal {
-  width: 17rem;
+.btn_box_mini {
+  width: 7.5rem;
 }
 .btn_box_small {
   width: 12.5rem;
+}
+.btn_box_normal {
+  width: 17rem;
 }
 .btn_box_large {
   width: 25rem;
@@ -202,6 +205,9 @@ div.bookmark_green table th {
   color: #fff;
   padding: 0.5rem 1rem;
   transition: all 0.3s;
+  text-align: center;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 .md_btn_main {
   background-color: #0c8f4f;
@@ -519,4 +525,41 @@ section.navLink .link_btn_box {
     margin-left: 3rem;
     margin-right: 3rem;
   }
+}
+
+section.progress {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 5rem;
+}
+section.progress .step {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #4d4d4d;
+}
+section.progress .step .number {
+  color: #fff;
+  background-color: #d4d4d4;
+  width: 3rem;
+  height: 3rem;
+  padding-top: 2px;
+  text-align: center;
+  border-radius: 100px;
+}
+section.progress .step .bar {
+  width: 15rem;
+  height: 2px;
+  background-color: #d4d4d4;
+  transform: translateX(5px);
+}
+section.progress .step_active {
+  color: #0c8f4f;
+}
+section.progress .step_active .number {
+  background-color: #0c8f4f;
+}
+section.progress .step_active .bar {
+  background-color: #0c8f4f;
 }/*# sourceMappingURL=style.css.map */
